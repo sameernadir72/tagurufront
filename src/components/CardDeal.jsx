@@ -6,15 +6,18 @@ const CardDeal = () => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Find a better card deal <br className="sm:block hidden" /> in few easy
-        steps.
+        Introducing TAG Tokens
+        {/* <br className="sm:block hidden" /> in few easy
+        steps. */}
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
-        aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
+        Candidates will be rewarded with TAG tokens for sharing their resumes. TAG tokens can be used as currency for
+        purchasing goods and services with TA Guru or exchanged with other cryptocurrencies. TAG tokens benefit Clients
+        and Recruiters by reducing recruitment costs, Improving trust, and enhancing the credibility of their profiles
+        on the blockchain.
       </p>
 
-      <Button styles={`mt-10`} />
+      {/* <Button styles={`mt-10`} /> */}
     </div>
 
     <div className={layout.sectionImg}>
