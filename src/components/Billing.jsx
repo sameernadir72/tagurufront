@@ -1,6 +1,7 @@
 import { apple, bill, google } from "../assets";
 import styles, { layout } from "../style";
 import video from "../assets/promoVideo.mp4";
+import "./Billings.css";
 const Billing = () => (
   // <section id="product" className={layout.sectionReverse}>
   //   <div className={layout.sectionImgReverse}>
@@ -29,9 +30,11 @@ const Billing = () => (
   //     </div>
   //   </div>
   // </section>
-  <video controls width="100%">
-    <source src={video} type="video/mp4" />
-  </video>
+  <div className="container">
+    <video className="video" controls width="100%">
+      <source src={video} type="video/mp4" />
+    </video>
+  </div>
 );
 
 export default Billing;

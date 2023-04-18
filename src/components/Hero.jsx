@@ -1,6 +1,7 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -9,7 +10,23 @@ const Hero = () => {
         <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">Welcome To TA GURU </span>
+            <TypeAnimation
+              sequence={[
+                "Welcome",
+                500,
+                "Welcome To", //  Continuing previous Text
+                500,
+                "Welcome To TA",
+                500,
+                "Welcome To TA GURU",
+                500,
+                "",
+                500,
+              ]}
+              style={{ fontSize: "2em" }}
+              repeat={Infinity}
+            />
+            {/* <span className="text-white">Welcome To TA GURU </span> */}
             <span className="text-white"></span>
           </p>
         </div>
@@ -18,9 +35,9 @@ const Hero = () => {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
             TA GURU - <br className="sm:block hidden" /> <span className="text-gradient">Decentralized</span>{" "}
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
+          {/* <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
-          </div>
+          </div> */}
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -43,9 +60,9 @@ const Hero = () => {
         {/* gradient end */}
       </div>
 
-      <div className={`ss:hidden ${styles.flexCenter}`}>
+      {/* <div className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted />
-      </div>
+      </div> */}
     </section>
   );
 };
