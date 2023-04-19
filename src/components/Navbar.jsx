@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import { close, logo, menu } from "../assets";
+import { close, logo2, menu } from "../assets";
+
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -8,12 +9,25 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav
-     
-      className="w-full flex py-6 justify-between items-center navbar"
-    >
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
+    <nav className="w-full flex py-6 justify-between items-center navbar">
+      {/* <img src={logo2} alt="hoobank" className="w-[124px] h-[32px]" /> */}
+      <svg
+        className="w-[124px] h-[32px]"
+        version="1.0"
+        xmlns="http://www.w3.org/2000/svg"
+        width="727.000000pt"
+        height="188.000000pt"
+        viewBox="0 0 727.000000 188.000000"
+        preserveAspectRatio="xMidYMid meet"
+      >
+        <g transform="translate(0.000000,188.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+          <path
+            d="M1860 1205 c0 -8 5 -15 10 -15 6 0 10 7 10 15 0 8 -4 15 -10 15 -5 0
+-10 -7 -10 -15z"
+          />
+          <path d="M1201 654 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z" />
+        </g>
+      </svg>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
