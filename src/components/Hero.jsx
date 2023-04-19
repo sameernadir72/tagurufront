@@ -5,9 +5,16 @@ import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
-    <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
+    <section
+      style={{
+        background: "rgb(108,42,198)",
+        background: "linear-gradient(90deg, rgba(108,42,198,1) 31%, rgba(72,35,143,1) 55%, rgba(13,33,69,1) 100%)",
+      }}
+      id="home"
+      className={`flex md:flex-row flex-col ${styles.paddingY}`}
+    >
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+        <div className="flex flex-row items-center py-[6px] px-4  rounded-[10px] mb-2">
           <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
           <p className={`${styles.paragraph} ml-2`}>
             <TypeAnimation
@@ -23,7 +30,7 @@ const Hero = () => {
                 "",
                 500,
               ]}
-              style={{ fontSize: "2em" }}
+              style={{ fontSize: "1em" }}
               repeat={Infinity}
             />
             {/* <span className="text-white">Welcome To TA GURU </span> */}

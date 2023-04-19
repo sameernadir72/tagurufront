@@ -3,21 +3,42 @@ import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testi
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div
+      style={{
+        background: "rgb(108,42,198)",
+        background: "linear-gradient(90deg, rgba(108,42,198,1) 31%, rgba(72,35,143,1) 55%, rgba(13,33,69,1) 100%)",
+      }}
+      className={`${styles.paddingX} ${styles.flexCenter}`}
+    >
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div
+      style={{
+        background: "rgb(108,42,198)",
+        background: "linear-gradient(90deg, rgba(108,42,198,1) 31%, rgba(72,35,143,1) 55%, rgba(13,33,69,1) 100%)",
+      }}
+      className={`bg-primary ${styles.flexStart}`}
+    >
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>
     </div>
-    
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div
+      style={{
+        background: "rgb(108,42,198)",
+        background: "linear-gradient(90deg, rgba(108,42,198,1) 31%, rgba(72,35,143,1) 55%, rgba(13,33,69,1) 100%)",
+      }}
+      className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}
+    >
       <div className={`${styles.boxWidth}`}>
         <Stats />
+      </div>
+    </div>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
         <Business />
         <Billing />
         <CardDeal />
