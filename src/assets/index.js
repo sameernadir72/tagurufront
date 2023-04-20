@@ -1,10 +1,10 @@
 import airbnb from "./airbnb.png";
 import bill from "./bill.png";
 import binance from "./binance.png";
-import card from "./card.png";
+import card from "./NFT10_generated.jpg";
 import coinbase from "./coinbase.png";
 import dropbox from "./dropbox.png";
-import logo from "./logo.svg";
+import logo from "./taglogog3-transformed.png";
 import quotes from "./quotes.svg";
 import robot from "./robot.png";
 import send from "./Send.svg";
@@ -24,7 +24,7 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 import logo2 from "./logo2.svg";
-import hero from "./hero.svg";
+import hero from "./hero.png";
 export {
   logo2,
   hero,

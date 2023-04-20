@@ -40,7 +40,7 @@ const App = () => (
 
     <div
       style={{
-        background: "white",
+        background: "#08213F",
         // background: "linear-gradient(90deg, rgba(108,42,198,1) 31%, rgba(72,35,143,1) 55%, rgba(13,33,69,1) 100%)",
       }}
       className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}
